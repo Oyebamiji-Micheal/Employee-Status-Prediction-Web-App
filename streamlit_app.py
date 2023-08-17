@@ -126,6 +126,8 @@ Random Forest was chosen as my sampling technique comparison model. Below is how
 
 st.write("""
 The sampling models were not included here due to their enormous sizes - you can check them out on my Github though. Everything you need to know regarding this project including the documentation, notebook, dataset, precision-recall dilemma, etc. can be found in my repository on [Github](https://github.com/Oyebamiji-Micheal/Employee-Status-Prediction-Web-App/tree/main).
+
+Made by Oyebamiji Micheal
 """)
 
 predict_promotion = st.button("Predict Employee Promotion")
