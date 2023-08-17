@@ -2,3 +2,9 @@ joblib==1.2.0
 pandas==1.5.2
 streamlit==1.25.0
 scikit-learn==1.2.0
+imbalanced-learn==0.11.0
+numpy==1.23.5
+pandas==1.5.2
+pickleshare==0.7.5
+scipy==1.9.3
+xgboost==1.7.6
