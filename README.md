@@ -48,17 +48,18 @@ I have tried painting this as a real-world instance in which my assignment is to
 <h2>Insights from EDA</h2>
 <p align="justify">
 The dataset contains about 54,000 rows and 14 columns. The CSV file, along with the column description, can be found on <a href="https://www.kaggle.com/datasets/shivan118/hranalysis">Kaggle</a>. Below are some of the insights gained after performing an EDA. </p>
-- As pointed out earlier, the data is highly imbalanced. Below is the proportion of employees who are promoted to those who are not <br />
+
+- As pointed out earlier, the data is highly imbalanced. Below is the proportion of employees who are promoted to those who are not.
 <p align="center"><img src="images/employee_proportion.jpg" width="600" height="278"></p>
 
 - While males constitute a larger portion of the workforce (about 60%), 8.9% of females have successfully earned promotions which are higher than that of males, 8.3%.
   
-- Moving from left to right, we observe that the number of promoted employees decreases as the respective number of training increases - a negative correlation. 
+- The `number_of_training` column contains ten unique values (1-10) which represents an employee's total number of trainings. Part of my EDA was to see how this column relate to whether an employee gets promoted or not. The plot below shows the proportion of employees across each unique `number_of_training`. Moving from left to right, we observe that the proportion of promoted employees decreases as the respective `number_of_training` increases - a negative correlation. 
 <p align="center"><img src="images/no_of_training.jpg" width="600" height="357"></p>
 
 - A positive correlation was observed between the number of promoted employees and previous year rating. 
 
-- Employees with higher training score also tend to be promoted 
+- The violin plot below shows that promoted employees on average have a higher `average_training_score`. Another observation was that an `average_training_score` of 60 seem like a benchmark for promotion. This observation is roughly true if we consider non promoted employees. Most non promoted employees have an `average_training_score` of 50 as shown by the larger width of the violin plot. To further back this, just 25% of promoted employees have less than an `average_training_score` of 60. 
 <p align="center"><img src="images/avg_training_score.jpg" width="600" height="414"></p>
 
 <a id="feature_engineering"></a>
